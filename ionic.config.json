@@ -1,0 +1,8 @@
+{
+  "name": "ratingApp",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular"
+}

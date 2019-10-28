@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      <br/>
+      Trabalhos      
+      <br/>      
+    </ion-title>
+    
+    <ion-searchbar placeholder="Buscar por autor, titulo ou código" animated></ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>    
+    <ion-card class="welcome-card" *ngFor="let work of works">
+      <ion-card-header>
+        <ion-card-subtitle>{{work.code}}</ion-card-subtitle>
+        <ion-card-title>{{work.title}}</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <p>{{work.author}}</p>
+      </ion-card-content>
+      <ion-item>
+          <ion-button fill="outline" slot="end">Avaliar</ion-button>
+          <ion-button fill="outline" slot="end" href="assets/pdf.pdf" download >Ver</ion-button>
+      </ion-item>    
+    </ion-card>
+</ion-content>
