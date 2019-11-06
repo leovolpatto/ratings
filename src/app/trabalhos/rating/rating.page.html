@@ -1,0 +1,78 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-buttons slot="start">
+          <ion-back-button  defaultHref=""></ion-back-button>
+        </ion-buttons>    
+    <ion-title>
+      <br/>
+      Avaliação      
+      <br/>      
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen>
+
+  <ion-list>
+      <ion-item>
+          <ion-range min="1" max="5" step="1" value="1" pin snaps>
+            <ion-icon slot="start" size="small" color="danger" name="thermometer"></ion-icon>
+            <ion-icon slot="end" size="large" color="danger" name="thermometer"></ion-icon>
+          </ion-range>
+        </ion-item>    
+  </ion-list>
+
+    <ion-list>
+      <ion-list-header>
+        Questionário
+      </ion-list-header>
+
+      <ion-item>
+          <ion-label position="stacked">Texto do Quesito 1</ion-label>
+          <ion-input type="text" placeholder="Digite a resposta"></ion-input>
+      </ion-item>
+
+      <ion-item>
+          <ion-label position="stacked">Numero do Quesito 2</ion-label>
+          <ion-input type="number" placeholder="Digite o numero"></ion-input>
+      </ion-item>
+
+      <ion-item>
+          <ion-label position="stacked">Numero do Quesito 3</ion-label>
+          <ion-input type="number" placeholder="Digite o numero"></ion-input>
+      </ion-item>
+
+      <ion-item>
+          <ion-label position="stacked">Atende ao Quesito 4</ion-label>
+          <ion-checkbox></ion-checkbox>
+      </ion-item>
+
+      <ion-item>
+          <ion-label position="stacked">Seleção do Quesito 5</ion-label>
+          <br/>
+              <ion-radio-group>
+                  <ion-item size="small">
+                    <ion-label size="small">Ruim</ion-label>
+                    <ion-radio  size="small" slot="start" color="success" value="apple"></ion-radio>
+                  </ion-item>
+        
+                  <ion-item>
+                    <ion-label>Médio</ion-label>
+                    <ion-radio slot="start" color="tertiary" value="grape" checked></ion-radio>
+                  </ion-item>
+        
+                  <ion-item>
+                    <ion-label>Bom</ion-label>
+                    <ion-radio slot="start" color="danger" value="cherry"></ion-radio>
+                  </ion-item>
+                </ion-radio-group>
+        </ion-item>      
+
+      <ion-item>
+          <ion-label position="stacked">Anotações do Avaliador</ion-label>
+          <ion-textarea rows="6" cols="60" placeholder="..."></ion-textarea>
+      </ion-item>
+
+    </ion-list>   
+
+</ion-content>

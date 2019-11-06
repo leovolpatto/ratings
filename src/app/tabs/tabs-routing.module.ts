@@ -14,7 +14,16 @@ const routes: Routes = [
             path: '',
             loadChildren: () =>
               import('../trabalhos/trabalhos.module').then(m => m.TrabalhosPageModule)
-
+          },
+          {
+            path: 'rating',
+            children: [
+              {
+                path: '',
+                loadChildren: () =>
+                import('../trabalhos/rating/rating.module').then(m => m.RatingPageModule)
+              }
+            ]
           }
         ]
       },
